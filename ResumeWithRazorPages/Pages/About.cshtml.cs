@@ -6,15 +6,15 @@ namespace ResumeWithRazorPages.Pages
 {
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     [IgnoreAntiforgeryToken]
-    public class ErrorModel : PageModel
+    public class AboutModel : PageModel
     {
         public string? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
-        private readonly ILogger<ErrorModel> _logger;
+        private readonly ILogger<AboutModel> _logger;
 
-        public ErrorModel(ILogger<ErrorModel> logger)
+        public AboutModel(ILogger<AboutModel> logger)
         {
             _logger = logger;
         }
