@@ -19,7 +19,7 @@ namespace ResumeWithRazorPages.Services
                 UseDefaultCredentials = false,
                 EnableSsl = true,
                 Host = "smtp.gmail.com",
-                Port = 587,
+                Port = 25,
                 Credentials = new NetworkCredential(fromAddress, fromPassword)
             };
 
