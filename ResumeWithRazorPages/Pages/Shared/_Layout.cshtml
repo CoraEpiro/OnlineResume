@@ -1,11 +1,113 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    </noscript>
+    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+</head>
+<body id="top">
+    <div class="page-content">
+        <div class="container" id="content">
+            <header>
+                <div class="bg-light">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto me-2">
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-page="/Index">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-page="/About" asp-fragment="about">About</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-page="/Skills_&_Education" asp-fragment="skills&education">Skills & Education</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-page="/Journey" asp-fragment="journey">Journey</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-page="/Contact" asp-fragment="contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <header>
+                <div class="cover bg-light">
+                    <div class="container px-3">
+                        <div class="row">
+                            <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello" /></div>
+                            <div class="col-lg-6">
+                                <div class="mt-5">
+                                    <p class="lead text-uppercase mb-1">Hello!</p>
+                                    <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Ali Guliyev</h1>
+                                    <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">.Net Developer & Software Engineer</p>
+                                    <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+                                        <nav role="navigation">
+                                            <ul class="nav justify-content-left">
+                                                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/ali_quliiev" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/ali-guliyev-389837238" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+                                                <li class="nav-item"><a class="nav-link" href="https://github.com/CoraEpiro" title="GitHub"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" asp-page="/Contact" asp-fragment="contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-bg"></div>
+            </header>
 
-<body>
-    <div>
-        <main role="main">
-            @RenderBody()
-        </main>
+            <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+
+            <footer class="pt-4 pb-4 text-center bg-light">
+                <div class="container">
+                    <div class="my-3">
+                        <div class="h4">Ali Guliyev</div>
+                        <p>.Net Developer & Software Engineer</p>
+                        <div class="social-nav">
+                            <nav role="navigation">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/ali_quliiev" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/ali-guliyev-389837238" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://github.com/CoraEpiro" title="GitHub"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
+    <script src="/js/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./js/masonry.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./js/"></script>
+    <script src="./js/purecounter.min.js?ver=1.2.0"></script>
+    <script src="./js/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="./js/aos.min.js?ver=1.2.0"></script>
+    <script src="./js/main.js?ver=1.2.0"></script>
+
 </body>
+
 </html>
